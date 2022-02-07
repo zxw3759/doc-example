@@ -3,6 +3,11 @@ type: docker
 name: web
 
 steps:
+- name: version
+  image: node:alpine
+  commands:
+  - npm -v
+
 - name: npm install # name 不能重复
   image: node:alpine # 使⽤的镜像
   commands:

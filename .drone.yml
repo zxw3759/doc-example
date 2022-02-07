@@ -7,6 +7,7 @@ steps:
   image: node:alpine
   commands:
   - npm -v
+  
 
 - name: npm install # name 不能重复
   image: node:alpine # 使⽤的镜像

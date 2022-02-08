@@ -30,3 +30,10 @@ steps:
       source: .vuepress/dist/*
       target: /root/doc
       secrets: [ rsync_key ]
+
+
+   - name: notify
+    image: curlimages/curl
+    commands:
+      - |
+      curl -H "Content-Type:application/json" -X POST -d '{"text": {"content":"部署成功"},msgtype:"text"}' 'https://oapi.dingtalk.com/robot/send?access_token=587d203031917523bc857f011a052ba3f2044e37be49a878b5ae39d505c9ba01'

@@ -4,6 +4,5 @@
 
 shell deploy 成功 sucess
 
-drone deploy 成功 
+drone deploy 成功1
 
-是的我变了

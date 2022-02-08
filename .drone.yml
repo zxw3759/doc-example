@@ -13,6 +13,7 @@ steps:
     commands:
       - npm run test
 
+#  node 执行版本在image  node:16  or node:lasted
   - name: build
     image: node:16
     commands:
